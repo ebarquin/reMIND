@@ -26,7 +26,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_no_icon" translatesAutoresizingMaskIntoConstraints="NO" id="bIJ-ou-aEq">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_no_icon" translatesAutoresizingMaskIntoConstraints="NO" id="bIJ-ou-aEq">
                                             <rect key="frame" x="20" y="15" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="4WO-aw-51v"/>
@@ -52,7 +52,7 @@
                                 <connections>
                                     <outlet property="imgTask" destination="bIJ-ou-aEq" id="aQL-uL-4s0"/>
                                     <outlet property="lblTask" destination="Pyl-Ck-RSl" id="Yx6-f9-Fbx"/>
-                                    <segue destination="wfV-X9-pFW" kind="show" id="Yuh-SX-BlA"/>
+                                    <segue destination="wfV-X9-pFW" kind="show" identifier="detailSegue" id="Yuh-SX-BlA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,7 +61,8 @@
                             <outlet property="delegate" destination="zH7-gu-3TT" id="aao-a1-HT1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="reMIND" id="EJK-DU-B5T">
+                    <navigationItem key="navigationItem" title="reMIND" prompt=" " id="EJK-DU-B5T">
+                        <barButtonItem key="backBarButtonItem" title=" " id="uks-5P-rgE"/>
                         <barButtonItem key="rightBarButtonItem" image="icon-add" id="3Lf-tb-a2w">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -78,7 +79,7 @@
         <scene sceneID="8QG-Sb-9gB">
             <objects>
                 <collectionViewController id="wfV-X9-pFW" customClass="IconsViewController" customModule="reMIND" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NSd-DM-q8f">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="NSd-DM-q8f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -161,9 +162,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aoi-va-1JO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hw6-jY-dAM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hw6-jY-dAM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

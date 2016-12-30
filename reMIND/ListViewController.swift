@@ -79,4 +79,16 @@ class ListViewController: UITableViewController {
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detailSegue" {
+            if let IndexPath = self.tableView.indexPathForSelectedRow {
+                let destinationVC = segue.destination as! IconsViewController
+                let selectedTask = taskManager.tasks[IndexPath.row]
+                destinationVC.headerTitleString = selectedTask["title"]
+                destinationVC.selectedTask = IndexPath.row
+            }
+        }
+    }
 }

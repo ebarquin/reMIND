@@ -21,14 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_splash" translatesAutoresizingMaskIntoConstraints="NO" id="t3L-dX-yFD">
-                                <rect key="frame" x="76.5" y="211.5" width="222" height="244"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_splash" translatesAutoresizingMaskIntoConstraints="NO" id="EVP-ez-sNv">
+                                <rect key="frame" x="0.0" y="211.5" width="375" height="244"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="t3L-dX-yFD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1zz-Ph-Gu0"/>
-                            <constraint firstItem="t3L-dX-yFD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="roh-YP-hr0"/>
+                            <constraint firstItem="EVP-ez-sNv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="JIM-PJ-IFQ"/>
+                            <constraint firstItem="EVP-ez-sNv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nx1-yi-Ibo"/>
+                            <constraint firstItem="EVP-ez-sNv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="s25-Te-gtc"/>
+                            <constraint firstAttribute="trailing" secondItem="EVP-ez-sNv" secondAttribute="trailing" id="wIR-fB-6TJ"/>
                         </constraints>
                     </view>
                 </viewController>
